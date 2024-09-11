@@ -1,0 +1,3 @@
+class RecipesController
+
+end
