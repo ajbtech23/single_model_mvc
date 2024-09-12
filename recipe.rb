@@ -1,7 +1,8 @@
 class Recipe
-  attr_accessor :name, :description
+  attr_accessor :id, :name, :description
 
   def initialize(attributes={})
+    @id = attributes[:id]
     @name = attributes[:name]
     @description = attributes[:description]
   end

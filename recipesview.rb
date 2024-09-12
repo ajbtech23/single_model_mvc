@@ -16,14 +16,11 @@ class RecipesView
   end
 
   def display(arr_recipe_objs)
+    i = 0
     arr_recipe_objs.each do |recipe_obj|
-      puts(recipe_obj)
+      puts("#{i + 1} #{recipe_obj.name}")
+      i += 1
     end
   end
 
 end
-
-recipes_view_obj_test = RecipesView.new
-puts(recipes_view_obj_test.get_recipe_name)
-puts(recipes_view_obj_test.get_recipe_description)
-puts(recipes_view_obj_test.get_recipe_index)
